@@ -1,7 +1,8 @@
-### ToDo List Web Application
+# ToDo List Web Application
+
 This is a simple ToDo list web application created using HTML, CSS, and JavaScript. Users can create new tasks and set a deadline for each task. Additionally, users can set different background images and switch between light and dark mode.
 
-How to Use
+## How to Use
 To use this web application, follow these steps:
 
 Clone this repository to your local machine.
