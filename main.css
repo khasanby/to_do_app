@@ -1,0 +1,59 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+    font-size: 20px;
+    margin-top: 50px;
+    color: var(--white-color);
+    text-shadow: 3px 1px var(--black-color);
+}
+
+.task-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    max-width: 800px;
+    color: var(--white-color);
+}
+
+.datetimepicker {
+    text-align: center;
+}
+
+.container-input {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.textInput {
+    font-size: var(--font-size);
+    height: 50px;
+    width: 500px;
+    padding-left: 10px;
+}
+
+.textInput:focus {
+    outline: none;
+}
+
+.todo-title {
+    margin-top: 20px;
+}
+
+#date, #time {
+    border-radius: 50px;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}

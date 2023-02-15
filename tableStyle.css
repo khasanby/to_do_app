@@ -1,0 +1,75 @@
+table {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 20px;
+    letter-spacing: 1.2px;
+}
+
+td {
+    padding: 10px 30px;
+}
+
+th {
+    padding: 20px 0;
+}
+
+.task-name {
+    display: inline-block;
+    max-width: 200px;
+    word-wrap: break-word;
+    position: relative;
+}
+
+.scattered {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.todo-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.completed-title {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.completed {
+    text-decoration:line-through;
+    color: var(--black-color);
+}
+
+.task-edit {
+    padding: 10px 0px;
+}
+
+.date-edit {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.date-input {
+    padding: 10px 0px;
+}
+
+.time-input {
+    padding: 10px 0px;
+}
+
+.date {
+    padding: 5px 5px;
+    margin-right: 3px;
+}
+
+.time {
+    padding: 5px 5px;
+}

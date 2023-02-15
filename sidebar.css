@@ -1,0 +1,116 @@
+a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+a:hover {
+    color: cyan;
+}
+
+.sidebar {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    top: 20px;
+}
+
+.features {
+    position: absolute;
+    left: -200px;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    height: 80%;
+    width: 200px;
+    opacity: .7;
+    border-radius: 0px 50px 50px 0px;
+    font-weight: 50px;
+    display: flex;
+    padding-left: 8px;
+    flex-direction: column;
+    padding-top: 40px;
+    row-gap: 20px;
+    transition: transform 1s ease;
+}
+
+.color-picker {
+    display: none;
+}
+
+.font-picker {
+    display: none;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.features li {
+    list-style: none;
+}
+
+.appear-sidebar {
+    transform: translateX(200px);
+}
+
+.arrow-up {
+    transform: rotate(-180deg);
+}
+
+/* Hamburger Icon Animation */
+
+.hamburger-button {
+    transition: transform 1s ease;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger_button_click {
+    transform: translateX(120px);
+    opacity: .7;
+}
+
+label {
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+label:before {
+    content: "";
+    position: fixed;
+    transition: 1s all ease-in-out;
+}
+
+label div {
+    height: 4px;
+    background-color: #fff;
+    margin-bottom: 8px;
+    transition: 0.3s ease transform, 0.3s ease top, 0.3s ease width, 0.3s ease right;
+    border-radius: 5px;
+}
+
+label div:first-child {
+    transform-origin: 11px;
+}
+
+label div:last-child {
+    margin-bottom: 0;
+    transform-origin: 11px;
+}
+
+#menu_settings:checked + label div:first-child {
+    transform: rotateZ(-40deg);
+}
+
+#menu_settings:checked + label div:last-child {
+    transform: rotateZ(40deg);
+}

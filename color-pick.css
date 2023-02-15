@@ -1,0 +1,38 @@
+.background-img {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.bg {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 8px;
+    border-radius: 100%;
+    background-size: contain;
+    overflow: hidden;
+    transition: all 0.2s ease-in-out;
+}
+
+.bg:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.bgcolor-1 {
+    background-image: url(images/1.jpg);
+}
+.bgcolor-2 {
+    background-image: url(images/2.jpg);
+}
+.bgcolor-3 {
+    background-image: url(images/3.jpg);
+}
+.bgcolor-4 {
+    background-image: url(images/4.jpg);
+}
+.bgcolor-5 {
+    background-image: url(images/background-image.jpg);
+}

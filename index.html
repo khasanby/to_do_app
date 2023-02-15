@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="links.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Dancing+Script&family=Gloria+Hallelujah&family=Inconsolata&family=Sofia&family=Source+Serif+Pro&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <script src="darkLightMode.js" defer></script>
+    <script src="sidebar.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="sidebar">
+            <div class="hamburger-container">
+                <input type="checkbox" class="hamburger" id="menu_settings">
+                <label class="hamburger-button" for="menu_settings">
+                    <div></div>
+                    <div></div>
+                </label>
+            </div>
+            <ul class="features">
+                <h2>Custom Settings</h2>
+                <li>
+                    <a href="#" class="background-color-picker">
+                        Background Colors
+                        <span class="fas fa-caret-down"></span>
+                    </a>
+                    <ul class="color-picker">
+                        <li><div class="bg bgcolor-1"></div></li>
+                        <li><div class="bg bgcolor-2"></div></li>
+                        <li><div class="bg bgcolor-3"></div></li>
+                        <li><div class="bg bgcolor-4"></div></li>
+                        <li><div class="bg bgcolor-5"></div></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="font-picker-button">
+                        Fonts
+                        <span class="arrow-down fas fa-caret-down"></span>
+                    </a>
+                    <ul class="font-picker">
+                        <li><a class="crimson" href="#">Crimson</a></li>
+                        <li><a class="dancing" href="#">Dancing Script</a></li>
+                        <li><a class="gloria" href="#">Gloria Hakkekujah</a></li>
+                        <li><a class="inconsolata" href="#">Inconsolata</a></li>
+                        <li><a class="sofia" href="#">Sofia</a></li>
+                    </ul>
+                </li>
+                <li class="dark_mode_container">
+                    <div>
+                        <span>Dark mode</span>
+                        <input type="checkbox" class="checkbox-mode" id="checkbox-mode">
+                        <label for="checkbox-mode" class="label-mode">
+                            <i class='fas fa-sun'></i>
+                            <i class="fas fa-moon"></i>
+                            <div class='ball'>
+                        </label>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <h1 class="main-title">Todo-List</h1>
+            <div class="container-input">
+                <input type="text" name="text" placeholder="What is in your mind?" class="textInput">
+                <button id="add" class="circle-button"><span class="plus">+</span></button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="task-list">
+            <div class="datetimepicker">
+                <input type="date" id="date" value="2018-07-03">
+                <span></span>
+                <input type="time" id="time" value="08:00">
+            </div>
+            <div class="todo-title">
+                <h2>Tasks</h2>
+            </div>
+            <table id="tasks">
+                
+            </table>
+        </section>
+    </main>
+</body>
+</html>
